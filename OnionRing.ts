@@ -310,9 +310,7 @@ export class TextureSlicer {
         if (originalY === yStart) {
           originalY += yEnd - yStart;
         }
-        if (this.name === "listsample_piyoscrollbar_handle") {
-          // cc.log(this.name);
-        }
+
         outputPixels[(y * outputWidth + x) * 4] =
           originalPixels[(originalY * this.width + originalX) * 4];
         outputPixels[(y * outputWidth + x) * 4 + 1] =
