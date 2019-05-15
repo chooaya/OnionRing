@@ -1,3 +1,17 @@
+# This is a TypeScript version of OnionRing,can be used in Cocos Creator or other JavaScript APP.
+
+# WARNING
+
+Before using the OnionRing,Please install the dependencies first!
+# dependencies
+"@types/pngjs": "^3.3.2"
+"pngjs": "^3.4.0"
+
+```
+npm install pngjs  --save
+npm install --save @types/pngjs
+```
+
 # OnionRing
 
 before ![before.png](https://raw.githubusercontent.com/kyubuns/OnionRingUnity/master/Assets/OnionRingSample/Editor/In/SampleImage.png)
