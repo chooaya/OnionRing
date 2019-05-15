@@ -124,7 +124,7 @@ export class TextureSlicer {
     return slicer.GetBoarder();
   }
 
-  constructor(refTexture: Texture, getPixels: Uint8Array) {
+  constructor(refTexture: Texture2D, getPixels: Uint8Array) {
     this.texture = refTexture;
     this.width = refTexture.width;
     this.height = refTexture.height;
