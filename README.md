@@ -16,21 +16,21 @@ npm install --save @types/pngjs
 ```
 import * as OnionRing from "./OnionRing";
 ```
-# you can create a prefab from a node.Below is an example.
+# you can get the slice position auto computed by OnionRing.
 
 ```
-      // "go" is a variable,and its type is cc.Node,so you can create the by new cc.Node() or other way 
-      let prefab = PrefabUtils.createPrefabFrom(go);
-      let prefabUrl = "db://assets/Prefab/";
-      let prefabPath = prefabUrl + prefab.data.name + ".prefab";
-      let serializedPrefab = Editor.serialize(prefab);
-      Editor.Ipc.sendToMain(
-        "scene:create-prefab",
-        prefabPath,
-        serializedPrefab,
-        (e, t) => {
-          if (e) return cc.error(e);
-        }
+let texture: OnionRing.Texture2D = new OnionRing.Texture2D(
+        rawTextureMetaInfo["assetPath"]
+      );
+      let slicedTexture = OnionRing.TextureSlicer.Slice(texture);
+      console.log(
+        "slicedTexture.Boarder.Left:" +
+          slicedTexture.Boarder.Left +
+          " slicedTexture.Boarder.Right:" +
+          " slicedTexture.Boarder.Top:" +
+          slicedTexture.Boarder.Top +
+          " slicedTexture.Boarder.Bottom:" +
+          slicedTexture.Boarder.Bottom
       );
 ```
 
