@@ -19,6 +19,7 @@ import * as OnionRing from "./OnionRing";
 # you can get the slice position auto computed by OnionRing.
 
 ```
+// rawTextureMetaInfo["assetPath"] can be the url of any png image ex: C:\test\Sample\background.png
 let texture: OnionRing.Texture2D = new OnionRing.Texture2D(
         rawTextureMetaInfo["assetPath"]
       );
