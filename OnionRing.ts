@@ -36,10 +36,11 @@ export class Boarder {
     if (yEnd != null) this.yEnd = yEnd;
     if (skipX != null) this.skipX = skipX;
   }
-
+  /*
   public ToVector4(): Vector4 {
     return new Vector4(this.Left, this.Bottom, this.Right, this.Top);
   }
+  */
 }
 export class SlicedTexture {
   public Texture: Texture2D;
