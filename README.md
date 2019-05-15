@@ -4,10 +4,13 @@
 
 Before using the OnionRing,Please install the dependencies first!
 # dependencies
+"@types/node": "11.13.5"
 "@types/pngjs": "^3.3.2"
 "pngjs": "^3.4.0"
 
 ```
+npm install typescript@3.4.4
+npm install @types/node
 npm install pngjs  --save
 npm install --save @types/pngjs
 ```
